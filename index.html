@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GNN News</title>
+    <title>Físico em Foco</title>
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko&display=swap"
         rel="stylesheet">
 </head>
 
@@ -54,75 +60,49 @@
                     <li>Entrevistas</li>
                     <li>Artigos</li>
                     <li>Receitas</li>
-                    <li>Eventos Locais</li>
+                    <li>Eventos</li>
                     <li>Índice Basal</li>
-                    <ul>
-                        <li>Sobre</li>
-                        <li>Equipe</li>
-                    </ul>
+
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="superior">
-            <div class="esquerdaSuperior">
-                <div class="imagemPrincipal">
-                    <img src="./assets/nintendo.jpg" alt="">
-                </div>
-                <div class="noticiaPrincipal">
-                    <a target="_blank"
-                        href="https://g1.globo.com/pop-arte/games/noticia/2025/04/23/nintendo-switch-2-chega-ao-brasil-em-5-de-junho-veja-valores.ghtml">
-                        <h2>Nintendo Switch 2 chega ao Brasil em 5 de junho por R$ 4.500</h2>
-                    </a>
-                    <p>Novo console será lançado na mesma data do lançamento mundial. 'Mario Kart World' vai custar
-                        R$ 500.</p>
-                </div>
+        <div class="carrosselConteudo" id="carrosselFundo">
+            <button id="prev" class="seta">&#10094;</button>
+            <div class="titulo">
+                <h1>
+                    <span class="verde">Físico em Foco,</span><br>
+                    é o necessário para<br>
+                    <span class="verde">uma vida melhor</span>
+                </h1>
             </div>
 
-            <div class="direitaSuperior">
-                <div class="noticiaSecundaria">
-                    <div class="imagemSecundaria">
-                        <img src="./assets/pokemon.avif" alt="">
-                    </div>
+            <button id="next" class="seta">&#10095;</button>
+        </div>
 
-                    <div class="informacoes">
-                        <a target="_blank"
-                            href="https://g1.globo.com/pop-arte/games/noticia/2025/03/13/pokemon-go-e-outros-jogos-sao-vendidos-para-empresa-arabe-em-acordo-de-us-35-bilhoes.ghtml">
-                            <h3>ENTREVISTAS
-                            </h3>
-                        </a>
-                        <p>A Niantic anunciou um acordo para vender sua unidade de jogos eletrônicos para o grupo
-                            saudita Scopely.</p>
+        <div class="artigos">
+            <div class="secoes">
+                <h2>Artigos</h2>
+            </div>
+
+            <div class="baixo">
+                <div class="noticiaTerciaria">
+                    <div class="imagensBaixo">
+                        <img src="./assets/invencivel.avif" alt="">
                     </div>
                 </div>
 
-                <div class="noticiaSecundaria">
-                    <div class="imagemSecundaria">
-                        <img src="./assets/fortnite.webp" alt="">
-                    </div>
-                    <div class="informacoes">
-                        <a target="_blank"
-                            href="https://g1.globo.com/pop-arte/games/noticia/2024/12/04/servidores-de-fortnite-fall-guys-e-outros-jogos-da-epic-games-passam-por-instabilidade.ghtml">
-                            <h3>ENTREVISTAS</h3>
-                        </a>
-                        <p>Empresa diz que resolveu dificuldades no acesso a games e na formação de partidas após quatro
-                            horas.</p>
+                <div class="noticiaTerciaria">
+                    <div class="imagensBaixo">
+                        <img src="./assets/minecraft.avif" alt="">
                     </div>
                 </div>
 
-                <div class="noticiaSecundaria">
-                    <div class="imagemSecundaria">
-                        <img src="./assets/oblivion.avif" alt="">
-                    </div>
-                    <div class="informacoes">
-                        <a target="_blank"
-                            href="https://g1.globo.com/pop-arte/games/noticia/2025/04/22/oblivion-remastered-e-anunciado-e-lancado-ao-mesmo-tempo.ghtml">
-                            <h3>ENTREVISTAS</h3>
-                        </a>
-                        <p>Versão atualizada do quarto 'The Elder Scrolls', game de 2006, está disponível para
-                            PlayStation 5, Xbox Series X e S e computadores.</p>
+                <div class="noticiaTerciaria">
+                    <div class="imagensBaixo">
+                        <img src="./assets/sonic.avif" alt="">
                     </div>
                 </div>
             </div>
@@ -132,61 +112,6 @@
             <img src="./assets/ps5.png" alt="">
             <img src="./assets/nintendo.png" alt="">
             <img src="./assets/xbox.png" alt="">
-        </div>
-
-        <div class="baixo">
-            <div class="noticiaTerciaria">
-                <div class="dados">
-                    <a target="_blank"
-                        href="https://g1.globo.com/pop-arte/cinema/noticia/2024/06/28/filme-de-invencivel-com-atores-ainda-vai-acontecer-diz-produtor-dar-aos-fas-da-serie-algo-diferente.ghtml">
-                        <h3>ARTIGO</h3>
-                    </a>
-                    <p>Descrição</p>
-                </div>
-                <div class="imagensBaixo">
-                    <img src="./assets/invencivel.avif" alt="">
-                </div>
-            </div>
-
-            <div class="noticiaTerciaria">
-                <div class="dados">
-                    <a target="_blank"
-                        href="https://g1.globo.com/pop-arte/g1-ja-viu/noticia/2025/04/03/um-filme-minecraft-e-bobo-colorido-e-nao-se-leva-a-serio-assim-como-o-game-g1-ja-viu.ghtml">
-                        <h3>ARTIGO</h3>
-                    </a>
-                    <p>Descrição</p>
-                </div>
-                <div class="imagensBaixo">
-                    <img src="./assets/minecraft.avif" alt="">
-                </div>
-            </div>
-
-            <div class="noticiaTerciaria">
-                <div class="dados">
-                    <a target="_blank"
-                        href="https://g1.globo.com/pop-arte/games/noticia/2024/10/26/sonic-x-shadow-generations-traz-conteudo-inedito-com-desafios-excelentes-para-game-que-celebra-a-historia-do-ourico-azul-g1-jogou.ghtml">
-                        <h3>Receitas</h3>
-                    </a>
-                    <p>Descrição</p>
-                </div>
-                <div class="imagensBaixo">
-                    <img src="./assets/sonic.avif" alt="">
-                </div>
-            </div>
-
-            <div class="noticiaTerciaria">
-                <div class="dados">
-                    <a target="_blank"
-                        href="https://g1.globo.com/pop-arte/games/noticia/2024/11/11/dragon-age-the-veilguard-nunca-sai-do-meio-termo-entre-generos-mecanicas-e-ideias-g1-jogou.ghtml">
-                        <h3>'Dragon Age: The Veilguard' nunca sai do meio-termo entre gêneros, mecânicas e ideias;</h3>
-                    </a>
-                    <p>Personagens carismáticos não redimem começo lento de game que dilui pontos positivos da série de
-                        RPG em tentativa de renovação.</p>
-                </div>
-                <div class="imagensBaixo">
-                    <img src="./assets/dragonage.avif" alt="">
-                </div>
-            </div>
         </div>
     </main>
 
