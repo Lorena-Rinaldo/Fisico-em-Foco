@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GNN News</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="sobreposicao" onclick="ocultarMenu()"></div>
+    <script src="script.js"></script>
+    <nav id="menuLateral">
+        <ul class="menuLateral">
+            <li>Notícias</li>
+            <li>Esportes</li>
+            <li>Entretenimento</li>
+            <li>Ciência e Tecnologia</li>
+            <li>Saúde</li>
+            <ul>
+                <li>Editoriais</li>
+                <li>Jogos</li>
+                <li>Regiões</li>
+                <br>
+                <li>Sobre</li>
+                <li>Equipe</li>
+            </ul>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="parteSuperior">
+            <div class="menu">
+                <img src="./assets/menu.png" alt="" onclick="mostrarMenu()">
+                <h4 onclick="mostrarMenu()">MENU</h4>
+            </div>
+
+            <div class="logo">
+                <img src="./assets/logo.png" alt="">
+            </div>
+
+            <div class="pesquisa">
+                <input type="text" placeholder="BUSCAR">
+            </div>
+        </div>
+
+        <div class="parteInferior">
+            <p>JOGOS</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="superior">
+            <div class="esquerdaSuperior">
+                <div class="imagemPrincipal">
+                    <img src="./assets/nintendo.jpg" alt="">
+                </div>
+                <div class="noticiaPrincipal">
+                    <a target="_blank"
+                        href="https://g1.globo.com/pop-arte/games/noticia/2025/04/23/nintendo-switch-2-chega-ao-brasil-em-5-de-junho-veja-valores.ghtml">
+                        <h2>Nintendo Switch 2 chega ao Brasil em 5 de junho por R$ 4.500</h2>
+                    </a>
+                    <p>Novo console será lançado na mesma data do lançamento mundial. 'Mario Kart World' vai custar
+                        R$ 500.</p>
+                </div>
+            </div>
+
+            <div class="direitaSuperior">
+                <div class="noticiaSecundaria">
+                    <div class="imagemSecundaria">
+                        <img src="./assets/pokemon.avif" alt="">
+                    </div>
+
+                    <div class="informacoes">
+                        <a target="_blank"
+                            href="https://g1.globo.com/pop-arte/games/noticia/2025/03/13/pokemon-go-e-outros-jogos-sao-vendidos-para-empresa-arabe-em-acordo-de-us-35-bilhoes.ghtml">
+                            <h3>'Pokémon GO' e outros jogos são vendidos para empresa árabe em acordo de US$ 3,5 bilhões
+                            </h3>
+                        </a>
+                        <p>A Niantic anunciou um acordo para vender sua unidade de jogos eletrônicos para o grupo
+                            saudita Scopely.</p>
+                    </div>
+                </div>
+
+                <div class="noticiaSecundaria">
+                    <div class="imagemSecundaria">
+                        <img src="./assets/fortnite.webp" alt="">
+                    </div>
+                    <div class="informacoes">
+                        <a target="_blank"
+                            href="https://g1.globo.com/pop-arte/games/noticia/2024/12/04/servidores-de-fortnite-fall-guys-e-outros-jogos-da-epic-games-passam-por-instabilidade.ghtml">
+                            <h3>Servidores de 'Fortnite', 'Fall Guys' e 'Rocket League' da Epic Games passam por
+                                instabilidade</h3>
+                        </a>
+                        <p>Empresa diz que resolveu dificuldades no acesso a games e na formação de partidas após quatro
+                            horas.</p>
+                    </div>
+                </div>
+
+                <div class="noticiaSecundaria">
+                    <div class="imagemSecundaria">
+                        <img src="./assets/oblivion.avif" alt="">
+                    </div>
+                    <div class="informacoes">
+                        <a target="_blank"
+                            href="https://g1.globo.com/pop-arte/games/noticia/2025/04/22/oblivion-remastered-e-anunciado-e-lancado-ao-mesmo-tempo.ghtml">
+                            <h3>'Oblivion Remastered' é anunciado e lançado ao mesmo tempo</h3>
+                        </a>
+                        <p>Versão atualizada do quarto 'The Elder Scrolls', game de 2006, está disponível para
+                            PlayStation 5, Xbox Series X e S e computadores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="publicidade">
+            <img src="./assets/ps5.png" alt="">
+            <img src="./assets/nintendo.png" alt="">
+            <img src="./assets/xbox.png" alt="">
+        </div>
+
+        <div class="baixo">
+            <div class="noticiaTerciaria">
+                <div class="dados">
+                    <a target="_blank"
+                        href="https://g1.globo.com/pop-arte/cinema/noticia/2024/06/28/filme-de-invencivel-com-atores-ainda-vai-acontecer-diz-produtor-dar-aos-fas-da-serie-algo-diferente.ghtml">
+                        <h3>Filme de 'Invencível' com atores ainda vai acontecer, diz produtor: 'Dar aos fãs da série
+                            algo diferente'</h3>
+                    </a>
+                    <p>David Alpert, CEO da Skybound, expressa interesse em produzir uma série no Brasil durante
+                        palestra na gamescom latam.</p>
+                </div>
+                <div class="imagensBaixo">
+                    <img src="./assets/invencivel.avif" alt="">
+                </div>
+            </div>
+
+            <div class="noticiaTerciaria">
+                <div class="dados">
+                    <a target="_blank"
+                        href="https://g1.globo.com/pop-arte/g1-ja-viu/noticia/2025/04/03/um-filme-minecraft-e-bobo-colorido-e-nao-se-leva-a-serio-assim-como-o-game-g1-ja-viu.ghtml">
+                        <h3>'Um filme Minecraft' é bobo, colorido e não se leva a sério — assim como o game</h3>
+                    </a>
+                    <p>Estreia desta quinta-feira (3) tem referências e absurdos suficientes para conquistar fãs do game
+                        mais vendido do mundo, mas não deve atrair quem nunca jogou.</p>
+                </div>
+                <div class="imagensBaixo">
+                    <img src="./assets/minecraft.avif" alt="">
+                </div>
+            </div>
+
+            <div class="noticiaTerciaria">
+                <div class="dados">
+                    <a target="_blank"
+                        href="https://g1.globo.com/pop-arte/games/noticia/2024/10/26/sonic-x-shadow-generations-traz-conteudo-inedito-com-desafios-excelentes-para-game-que-celebra-a-historia-do-ourico-azul-g1-jogou.ghtml">
+                        <h3>'Sonic X Shadow Generations' traz conteúdo inédito com desafios excelentes para game que
+                            celebra a história do ouriço azul;</h3>
+                    </a>
+                    <p>Game lançado na sexta-feira (25) traz remasterização de jogo de 2011 e mais uma aventura
+                        exclusiva de Shadow, o ouriço anti-herói cheio de habilidades especiais.</p>
+                </div>
+                <div class="imagensBaixo">
+                    <img src="./assets/sonic.avif" alt="">
+                </div>
+            </div>
+
+            <div class="noticiaTerciaria">
+                <div class="dados">
+                    <a target="_blank"
+                        href="https://g1.globo.com/pop-arte/games/noticia/2024/11/11/dragon-age-the-veilguard-nunca-sai-do-meio-termo-entre-generos-mecanicas-e-ideias-g1-jogou.ghtml">
+                        <h3>'Dragon Age: The Veilguard' nunca sai do meio-termo entre gêneros, mecânicas e ideias;</h3>
+                    </a>
+                    <p>Personagens carismáticos não redimem começo lento de game que dilui pontos positivos da série de
+                        RPG em tentativa de renovação.</p>
+                </div>
+                <div class="imagensBaixo">
+                    <img src="./assets/dragonage.avif" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h5>© Copyright - Todos os Direitos Reservados</h5>
+    </footer>
+
+</body>
+
+</html>
