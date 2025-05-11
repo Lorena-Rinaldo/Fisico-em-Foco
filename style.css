@@ -22,8 +22,8 @@ header {
     justify-content: space-around;
     width: 100%;
     height: 70%;
-    background-color: #c4170c;
-    border: 1px solid rgba(245, 15, 15, 0.416);
+    background-color: #26D07C;
+    border: 0.5px solid #125a36;
     
 }
 
@@ -42,7 +42,7 @@ header {
 
 .menu h4 {
     margin-left: 3px;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -86,7 +86,7 @@ header {
     font-size: 20px;
 }
 #menuLateral li:hover {
-    background-color: #c4170c;
+    background-color: #26D07C;
     color: white;
 }
 
@@ -122,35 +122,36 @@ header {
     padding: 8px;
     border: 0;
     border-radius: 4px;
-    background-color: brown;
+    background-color: #0f8a4d;
 }
 
 .pesquisa ::placeholder {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 650;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 14px;
 }
 
 .parteInferior {
     display: flex;
     flex-direction: row;
-    background-color: #b0150b;
+    background-color: #10854b;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 30%;
 }
 
-.parteInferior p {
+.parteInferior li {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: white;
+    color: rgb(0, 0, 0);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 main {
@@ -160,6 +161,7 @@ main {
     min-height: 100vh;
     align-items: center;
     color: black;
+    background-color: black;
 }
 
 
@@ -178,7 +180,8 @@ h3 {
 }
 
 h2:hover, h3:hover {
-    color: rgba(94, 0, 0, 0.848);}
+    color:#08b25d;
+}
 
 p {
     font-size: 15px;
@@ -188,7 +191,7 @@ p {
 }
 
 a {
-   color: rgba(227, 0, 0, 0.848);
+   color: #10854b;
    text-decoration: none 
 }
 
@@ -207,7 +210,7 @@ a {
     flex-wrap: wrap;
     border-radius: 5px;
     border: 0.1px solid rgba(134, 134, 134, 0.201);
-    background-color: rgb(238, 236, 236);
+    background-color: rgb(209, 209, 209);
 }
 
 .imagemPrincipal {
@@ -318,7 +321,7 @@ a {
 
 .noticiaTerciaria {
     display: flex;
-    width: 48%;
+    width: 100%;
     height: 160px; 
     justify-content: space-between;
     align-items: center;
@@ -333,7 +336,7 @@ a {
     background-color: bisque;
     height: 70%;
     margin: 10px;
-    width: 30%;
+    width: 20%;
 }
 
 .imagensBaixo img {
@@ -358,7 +361,7 @@ footer {
     width: 100%;
     height: 50px;
     margin-top: 50px;
-    background-color:rgba(213, 0, 0, 0.935);
+    background-color: black;
     align-items: center;
     justify-content: center;
 }
