@@ -1,19 +1,3 @@
-function mostrarMenu() {
-    var menuLateral = document.getElementById("menuLateral");
-    var sobreposicao = document.getElementById("sobreposicao");
-
-    menuLateral.style.left = "0"; 
-    sobreposicao.style.display = "block"; 
-}
-
-function ocultarMenu() {
-    var menuLateral = document.getElementById("menuLateral");
-    var sobreposicao = document.getElementById("sobreposicao");
-
-    menuLateral.style.left = "-250px"; 
-    sobreposicao.style.display = "none"; 
-}
-
 window.onload = function() {
     let index = 0;
     const images = document.querySelectorAll('.carrosselConteudo img');

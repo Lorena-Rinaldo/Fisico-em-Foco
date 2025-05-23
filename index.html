@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Físico em Foco</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,53 +20,26 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <div id="sobreposicao" onclick="ocultarMenu()"></div>
-    <script src="script.js"></script>
-    <nav id="menuLateral">
-        <ul class="menuLateral">
-            <li>Home</li>
-            <li>Entrevistas</li>
-            <li>Artigos</li>
-            <li>Receitas</li>
-            <li>Eventos Locais</li>
-            <li>Índice Basal</li>
-            <ul>
-                <br>
-                <li>Sobre</li>
-                <li>Equipe</li>
-            </ul>
-        </ul>
-    </nav>
 
     <header>
         <div class="parteSuperior">
-            <div class="menu">
-                <img src="./assets/menu.png" alt="" onclick="mostrarMenu()">
-                <h4 onclick="mostrarMenu()">MENU</h4>
-            </div>
-
             <div class="logo">
                 <img src="./assets/logo.png" alt="">
-            </div>
-
-            <div class="pesquisa">
-                <input type="text" placeholder="BUSCAR">
             </div>
         </div>
 
         <div class="parteInferior">
-            <nav>
+            <nav class="menuInferior">
                 <ul>
-                    <li>Entrevistas</li>
-                    <li>Artigos</li>
-                    <li>Receitas</li>
-                    <li>Eventos</li>
-                    <li>Índice Basal</li>
-
+                    <li> <a href="#home">Home</a></li>
+                    <li><a href="#entrevistas">Entrevistas</a></li>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#receitas">Receitas</a></li>
+                    <li><a href="#eventosLocais">Eventos Locais</a></li>
                 </ul>
             </nav>
         </div>
@@ -83,22 +56,22 @@
             </div>
         </div>
 
-        <div class="artigos">
+        <div class="artigos" id="artigos">
             <div class="secoes">
                 <h2>Artigos</h2>
             </div>
 
             <div class="baixo">
-                <div class="noticiaTerciaria">
+                <div class="cards">
                     <div class="imagensBaixo">
-                        <img src="./assets/entrevista-de-emprego.png" alt="">
+                        <a href="./pages/artigo1.html"><img src="./assets/entrevista-de-emprego.png" alt=""></a>
                     </div>
                     <div class="escrita">
                         <p>aq vai ficar as entrevistas</p>
                     </div>
                 </div>
 
-                <div class="noticiaTerciaria">
+                <div class="cards">
                     <div class="imagensBaixo">
                         <img src="./assets/receitas.jpg" alt="">
                     </div>
@@ -107,12 +80,12 @@
                         <p>aq eu sei que vai ser receitas, mas precisamos de um botão</p>
                     </div>
                 </div>
-                <div class="noticiaTerciaria">
+                <div class="cards">
                     <div class="imagensBaixo">
                         <img src="./assets/exercicios.jpg" alt="">
                     </div>
                     <div class="escrita">
-                       <p>sla oq vai ter aq... exercicios?</p>
+                        <p>sla oq vai ter aq... exercicios?</p>
                     </div>
                 </div>
             </div>
@@ -123,9 +96,14 @@
             <img src="./assets/nintendo.png" alt="">
             <img src="./assets/xbox.png" alt="">
         </div>
-            
-        <div class="baixo2">
-                <div class="noticiaTerciaria">
+
+         <div class="artigos" id="artigos">
+            <div class="secoes">
+                <h2>Receitas</h2>
+            </div>
+
+            <div class="baixo">
+                <div class="cards">
                     <div class="imagensBaixo">
                         <img src="./assets/entrevista-de-emprego.png" alt="">
                     </div>
@@ -134,7 +112,7 @@
                     </div>
                 </div>
 
-                <div class="noticiaTerciaria">
+                <div class="cards">
                     <div class="imagensBaixo">
                         <img src="./assets/receitas.jpg" alt="">
                     </div>
@@ -143,29 +121,32 @@
                         <p>aq eu sei que vai ser receitas, mas precisamos de um botão</p>
                     </div>
                 </div>
-                <div class="noticiaTerciaria">
+                <div class="cards">
                     <div class="imagensBaixo">
                         <img src="./assets/exercicios.jpg" alt="">
                     </div>
                     <div class="escrita">
-                       <p>sla oq vai ter aq... exercicios?</p>
+                        <p>sla oq vai ter aq... exercicios?</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="principal">
             <div class="principal2">
-               <video class="video" autoplay loop muted>
+                <video class="video" autoplay loop muted>
                     <source src="assets/MP4/SLC, nunca mais faço d novo (1).mp4">
-                </video></div>
-                <div class="principal3"> <p> Temos que por algo aq, só ta vermelho pra achar mais facil
-                </p></div>
+                </video>
             </div>
+            <div class="principal3">
+                <p> Temos que por algo aq, só ta vermelho pra achar mais facil
+                </p>
+            </div>
+        </div>
         </div>
     </main>
 
-       <footer>
-        <img src="./assets/logo.png" alt="Logo da empresa" />
+    <footer>
+        <img class="logoInvertida" src="./assets/logoInvertida.png" alt="Logo da empresa" />
         <div class="icones-sociais">
             <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
             <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
