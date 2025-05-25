@@ -5,27 +5,35 @@
     text-decoration: none;
     outline: none;
     list-style: none;
+    font-family: "Cal Sans", sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: rgb(240, 240, 240);
-    font-family: "Cal Sans", sans-serif;
 }
 
 header {
     display: flex;
     text-align: center;
     height: 100px;
+    width: 100%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
     height: 8em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .parteSuperior {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 70%;
+    height: 79px;
     background-color: #26D07C;
 }
 
@@ -50,7 +58,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 35%;
+    height: 25%;
     border-bottom: 3px solid;
     border-image: linear-gradient(to right, rgb(255, 255, 255), rgb(171, 240, 189)) 1;
     border-image-slice: 1;
@@ -128,7 +136,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 100vh;
     width: 100%;
     align-items: center;
     animation: trocaImagem 25s infinite;
@@ -155,7 +163,7 @@ a {
 
 .titulo {
     margin-right: 45em;
-    margin-top: 28em;
+    margin-top: 23em;
     margin-bottom: 50px;
     color: rgb(255, 255, 255);
 }
@@ -182,9 +190,31 @@ h1 {
     margin-top: 55px;
     width: 90%;
     background-color: #000000;
+    padding-top: 110px;
+    margin-bottom: -130px;
 }
 
 .secoes h2 {
+    display: flex;
+    color: white;
+    width: 50%;
+    height: 100%;
+    font-size: 50px;
+    margin-left: 85px;
+}
+.secoes2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 55px;
+    margin-top: 55px;
+    width: 90%;
+    background-color: #000000;
+    padding-top: 110px;
+    margin-bottom: -130px;
+}
+
+.secoes2 h2 {
     display: flex;
     color: white;
     width: 50%;
@@ -196,11 +226,12 @@ h1 {
 .escrita {
     height: 40%;
     width: 100%;
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: 500;
     font-style: normal;
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 30px;
     margin-right: 30px;
@@ -211,11 +242,12 @@ h1 {
     align-self: center;
     justify-content: space-evenly;
     align-items: center;
-    height: 40%;
+    height: 100vh;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 55px;
+    margin-top: -55px;
 }
 
 .baixo2 {
@@ -223,7 +255,7 @@ h1 {
     align-self: center;
     justify-content: space-evenly;
     align-items: center;
-    height: 40%;
+    height: 100vh;
     flex-wrap: wrap;
     width: 100%;
     margin-top: 55px;
@@ -232,17 +264,45 @@ h1 {
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     width: 28%;
     height: 28em;
-    align-items: center;
-    flex-wrap: wrap;
     margin-top: 25px;
     background-color: #353535;
     border-radius: 8px;
     margin-left: -55px;
     margin-right: -55px;
 }
-
+.cards p{
+    font-size: 20px;
+}
+.botao{
+    width: 50%;
+    background-color: #10854b;
+    margin-top: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.botao:hover {
+    transform: scale(1.1); /* aumenta 10% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* efeito de profundidade */
+  }
+.cards button{
+    background-color: #10854b;
+    border: none;
+    font-size: 20px;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 500;
+}
+.textocard{
+    width: 100%;
+    height: 25%;
+    margin-bottom: -5px;
+}
 .imagensBaixo {
     height: 60%;
     width: 100%;
@@ -261,10 +321,9 @@ h1 {
 }
 
 .publicidade {
-    margin-top: 10px;
     display: flex;
     width: 76%;
-    height: 120px;
+    height: 150px;
     justify-content: center;
     align-items: center;
     border: 0.1px solid rgba(134, 134, 134, 0.201);
@@ -272,22 +331,44 @@ h1 {
     border-radius: 5px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 100px;
+}
+.slider {
+    width: 100%;
+    max-width: 1200px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-.publicidade img {
-    position: absolute;
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 50s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 1s ease-in-out;
-    border: 0.1px solid rgba(134, 134, 134, 0.201);
-    border-radius: 5px;
 }
-
+@keyframes slide {
+     0%    { transform: translateX(0%); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100%   { transform: translateX(0%); }
+}
 .principal {
     min-width: 100%;
-    height: 900px;
-    background-color: white;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
     display: flex;
     border-top: 40px solid #10854b;
     align-items: center;
@@ -311,10 +392,12 @@ h1 {
 .principal3 {
     width: 50%;
     height: 800px;
-    background-color: rgb(255, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.principal3 p{
+    font-size: 35px;
 }
 
 footer {
