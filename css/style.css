@@ -7,9 +7,11 @@
     list-style: none;
     font-family: "Cal Sans", sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: rgb(240, 240, 240);
 }
@@ -202,6 +204,7 @@ h1 {
     font-size: 50px;
     margin-left: 85px;
 }
+
 .secoes2 {
     display: flex;
     align-items: center;
@@ -267,18 +270,21 @@ h1 {
     flex-wrap: wrap;
     width: 28%;
     height: 28em;
-    margin-top: 25px;
     background-color: #353535;
     border-radius: 8px;
     margin-left: -55px;
     margin-right: -55px;
+    margin-top: 25px;
 }
-.cards p{
+
+.cards p {
     font-size: 20px;
 }
-.botao{
+
+.botao {
     width: 50%;
     background-color: #10854b;
+    color: rgb(235, 234, 234);
     margin-top: 45px;
     border-radius: 25px;
     display: flex;
@@ -287,22 +293,26 @@ h1 {
     height: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .botao:hover {
-    transform: scale(1.1); /* aumenta 10% */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* efeito de profundidade */
-  }
-.cards button{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cards button {
     background-color: #10854b;
     border: none;
     font-size: 20px;
     font-family: "Cal Sans", sans-serif;
     font-weight: 500;
 }
-.textocard{
+
+.textocard {
     width: 100%;
     height: 25%;
     margin-bottom: -5px;
 }
+
 .imagensBaixo {
     height: 60%;
     width: 100%;
@@ -333,6 +343,7 @@ h1 {
     position: relative;
     margin-bottom: 100px;
 }
+
 .slider {
     width: 100%;
     max-width: 1200px;
@@ -359,12 +370,25 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
+
 @keyframes slide {
-     0%    { transform: translateX(0%); }
-    33.33% { transform: translateX(-100%); }
-    66.66% { transform: translateX(-200%); }
-    100%   { transform: translateX(0%); }
+    0% {
+        transform: translateX(0%);
+    }
+
+    33.33% {
+        transform: translateX(-100%);
+    }
+
+    66.66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
+
 .principal {
     min-width: 100%;
     height: 100vh;
@@ -396,7 +420,8 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-.principal3 p{
+
+.principal3 p {
     font-size: 35px;
 }
 
