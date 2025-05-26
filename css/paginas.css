@@ -2,6 +2,96 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Cal Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #10854b;
+    text-decoration: none
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 8em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.parteSuperior {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 79px;
+    background-color: #26D07C;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+
+.parteInferior {
+    display: flex;
+    background-color: #10854b;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, rgb(255, 255, 255), rgb(171, 240, 189)) 1;
+    border-image-slice: 1;
+}
+
+.menuInferior {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menuInferior>ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuInferior>ul>li>a {
+    text-decoration: none;
+    padding: 10px 40px;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.menuInferior>ul>li>a:hover {
+    color: #000000;
+    font-weight: bold;
 }
 
 main {
@@ -76,4 +166,81 @@ main {
     color: #2d3142;
     height: 100%;
     border-radius: 8px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20em;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.logoInvertida {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 13%;
+}
+
+.logoInvertida img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 13%;
+}
+
+footer h5 {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    margin-top: 2em;
+}
+
+footer hr {
+    width: 70%;
+}
+
+.icones-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.icones-sociais a {
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+    transform: scale(1.2);
+}
+
+.icones-sociais a:hover {
+    transform: scale(1.3);
+}
+
+.icones-sociais .whatsapp:hover {
+    color: #25D366;
+}
+
+.icones-sociais .facebook:hover {
+    color: #1877F2;
+}
+
+.icones-sociais .instagram:hover {
+    color: #eb5dad;
+}
+
+.icones-sociais .youtube:hover {
+    color: #FF0000;
+}
+
+.icones-sociais .tiktok:hover {
+    color: #610bb2;
+}
+
+.icones-sociais .twitter:hover {
+    color: #1DA1F2;
 }
