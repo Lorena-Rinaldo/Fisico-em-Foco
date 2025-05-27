@@ -95,12 +95,18 @@ header {
 }
 
 main {
-    min-height: 210vh;
+    min-height: auto;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     background-color: black;
+    flex-wrap: wrap;
+}
+
+body {
+    display: flex;
+    min-height: auto;
     flex-wrap: wrap;
 }
 
@@ -125,11 +131,12 @@ main {
     flex-wrap: wrap;
     width: 90%;
     border-radius: 8px;
+    margin-bottom: 0;
 }
 
 .paragrafos {
     width: 80%;
-    height: 100vh;
+    height: auto;
     color: #dedae0;
     display: flex;
     justify-content: space-evenly;
@@ -161,6 +168,7 @@ main {
     display: flex;
     padding: 5px;
     text-align: justify;
+    flex-direction: column;
     font-size: 22px;
     width: 100%;
     color: #2d3142;
