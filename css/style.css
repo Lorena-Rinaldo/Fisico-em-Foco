@@ -193,28 +193,6 @@ h1 {
     width: 90%;
     background-color: #000000;
     padding-top: 110px;
-    margin-bottom: -130px;
-}
-
-.secoes h2 {
-    display: flex;
-    color: white;
-    width: 50%;
-    height: 100%;
-    font-size: 50px;
-    margin-left: 85px;
-}
-
-.secoes2 {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    margin-left: 55px;
-    margin-top: 55px;
-    width: 90%;
-    background-color: #000000;
-    padding-top: 110px;
-    margin-bottom: -130px;
 }
 
 .secoes2 h2 {
@@ -242,39 +220,22 @@ h1 {
 
 .baixo {
     display: flex;
+    flex-wrap: wrap;
     align-self: center;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
-    flex-wrap: wrap;
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 55px;
-    margin-top: -55px;
-}
-
-.baixo2 {
-    display: flex;
-    align-self: center;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 55px;
-    margin-bottom: 55px;
+    gap: 20px;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    width: 28%;
-    height: 28em;
+    width: 30%;
+    height: 23em;
     background-color: #353535;
     border-radius: 8px;
-    margin-left: -55px;
-    margin-right: -55px;
-    margin-top: 25px;
 }
 
 .cards p {
